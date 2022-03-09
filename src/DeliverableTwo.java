@@ -6,12 +6,14 @@ public class DeliverableTwo {//Auto-generated method stub
 		int headsCounter = 0;//counter for heads
 		int tailsCounter = 0;//counter for tails
 		double numberOfFlips;//variable for number of flips
+		String headsOrTailsGuess;
 		
 		Scanner scnr = new Scanner(System.in);//assigning scnr as user input
 		
+		do {
 				System.out.println("Guess which will have more: Heads or Tails?");//ask user to respond heads or tails
-				String headsOrTailsGuess = scnr.nextLine();//user input of heads or tails
-			do {	
+				headsOrTailsGuess = scnr.nextLine();//user input of heads or tails
+					
 				if (headsOrTailsGuess.equals("Heads"))//makes sure input is valid UPPER start
 				{
 				}
@@ -26,11 +28,12 @@ public class DeliverableTwo {//Auto-generated method stub
 				}
 				else
 				{
-					System.out.println("Input not valid, try again");//re prompts if input isn't "heads" or "tails", ex: kjsfhg
-					continue;
+					System.out.println("Input not valid, try again");//message than re prompts if input isn't "heads" or "tails", ex: kjsfhg
+					
+					continue;	
 				}
 				break;
-			}while (true);
+				}while (true);
 		
         do {
             System.out.print("How many times shall we flip the coin? ");//prompts user to enter number
@@ -76,8 +79,8 @@ public class DeliverableTwo {//Auto-generated method stub
 		 
 		double percentage = correctCount / numberOfFlips * 100;//new variable to find percentage of times user choice showed up
 				
-		System.out.println("Your guess, " + headsOrTailsGuess +", came up " + correctCount + " time(s). Thats " + percentage + "%.");	
-		
+		System.out.println("Your guess, " + headsOrTailsGuess +", came up " + correctCount + " time(s). Thats " + percentage + "%.");	//final message
+	
 		scnr.close();//scanner close
 	}
 
