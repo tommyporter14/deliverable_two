@@ -79,7 +79,7 @@ public class DeliverableTwo {//Auto-generated method stub
 		 
 		double percentage = correctCount / numberOfFlips * 100;//new variable to find percentage of times user choice showed up
 				
-		System.out.println("Your guess, " + headsOrTailsGuess +", came up " + correctCount + " time(s). Thats " + percentage + "%.");	//final message
+		System.out.println("Your guess, " + headsOrTailsGuess +", came up " + correctCount + " time(s). Thats " + percentage + "%.");//final message
 	
 		scnr.close();//scanner close
 	}
